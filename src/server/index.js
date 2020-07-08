@@ -28,6 +28,8 @@ app.use("/algo", require("./algo/algo.controller"));
 // global error handler
 app.use(errorHandler);
 
+module.exports = app;
+
 //app.use(jwt());
 // start server
 /* const {APP_PORT} = process.env;
