@@ -4,7 +4,7 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 const db = require("../_helpers/db");
-const {doc} = require("prettier");
+//const {doc} = require("prettier");
 const Trees = db.Trees;
 
 function newUserFunction(getPlayerId, getFreeTrees, pseudoPlayer, colorPlayer) {
@@ -17,7 +17,7 @@ function newUserFunction(getPlayerId, getFreeTrees, pseudoPlayer, colorPlayer) {
     let getRandomTreeNumber;
     console.log("==> GETFREETREES <==");
     if (freeTreesNumber > 10) {
-        const getRandomInt = max => {
+        const getRandomInt = (max) => {
             getRandomTreeNumber = Math.floor(Math.random() * Math.floor(max));
 
             //console.log(getRandomTreeNumber);
@@ -61,7 +61,7 @@ function newUserFunction(getPlayerId, getFreeTrees, pseudoPlayer, colorPlayer) {
                     console.log(error);
                 }
             }
-            getRandomTrees.forEach(element => {
+            getRandomTrees.forEach((element) => {
                 addFreeTreesToNewPlayers(element);
             });
         }
