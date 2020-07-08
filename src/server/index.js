@@ -30,8 +30,8 @@ app.use(errorHandler);
 
 //app.use(jwt());
 // start server
-const {APP_PORT} = process.env;
+/* const {APP_PORT} = process.env;
 
 app.listen(APP_PORT, () =>
     console.log(`🚀 Server is listening on port ${APP_PORT}.`),
-);
+); */
